@@ -1,9 +1,9 @@
 .main-container {
-    display:block;
+    display: block;
     justify-content: space-around;
-    height:auto;
+    height: auto;
     width: 100%;
-    grid-template-columns:850px ;
+    grid-template-columns: 850px ;
     grid-template-rows: 1fr;
     grid-template-areas: 
     "hd"
@@ -161,6 +161,10 @@ a:link { text-decoration: none; }
     padding-top: 20px;
 }
 
+li:hover {
+    color:darkcyan;
+}
+
 .padding {
     padding-top: 5px;
 }
@@ -183,7 +187,7 @@ a:link { text-decoration: none; }
   
 input[type=submit] {
     width: auto;
-    background-color: #4CAF50;
+    background-color: #54c257;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
@@ -193,7 +197,7 @@ input[type=submit] {
 }
   
 input[type=submit]:hover {
-    background-color: #45a049;
+    background-color: #419746;
 }
 
 .text-color {
@@ -201,8 +205,8 @@ input[type=submit]:hover {
 }
 
 .social-icons {
-    width:30px; 
-    height:30px;
+    width: 30px; 
+    height: 30px;
     padding-right: 10px;
 }
 
