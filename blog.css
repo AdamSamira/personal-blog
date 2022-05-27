@@ -64,11 +64,10 @@
     position: absolute;
     top: 77px;
     left: 16px;
-    width: 14px;
-    
+    width: 14px;   
 }
 
-.blog-card{
+.blog-card {
     margin: 24px 0 0 15px;
     width: 90%;
     height: auto;
@@ -80,7 +79,40 @@
     border: 1px solid #177BF6;
     
 }
-.card{
+
+.blog-text {
+    padding: 10px 0px 5px 20px;
+}
+
+.list-color {
+    color: #263E6F;
+}
+
+.blog-padding {
+    padding: 10px 10px 10px 20px;
+}
+
+.image-caption {
+    color: gray;
+    margin-top: 1px;
+    padding-left: 2px;
+}
+
+.blog-caption {
+    color: gray; 
+    padding-left: 20px;
+}
+
+.blog-title {
+    color: #263E6F; 
+    padding-left: 20px;
+}
+
+h3:hover {
+    color:darkcyan;
+}
+
+.card {
     display: inline-flex;
     margin: 30px 10px 0 10px;
     width: auto;
@@ -94,7 +126,7 @@
     border: 1px solid #177BF6;
 } 
 
-.card-content{
+.card-content {
     display:inline-block;
     color:black;
 }
@@ -110,9 +142,10 @@ html, body {
   margin: 0;
   padding: 0;
 }  
+
 a:link { text-decoration: none; }
 
-.links-header{
+.links-header {
     display: flex;
     width: 100%;
     height: 70px;
@@ -122,23 +155,23 @@ a:link { text-decoration: none; }
     border-top: 1.5px solid white;
 }
 
-.sidebar-content{
+.sidebar-content {
     color: white;
     padding-left: 30px;
     padding-top: 20px;
 }
 
-.form{
+.padding {
     padding-top: 5px;
 }
 
-.blog-content{
+.blog-content {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.form-content{
+.form-content { 
     width: auto;
     padding: 12px 20px;
     margin: 8px 0;
@@ -148,7 +181,7 @@ a:link { text-decoration: none; }
     box-sizing: border-box;
   }
   
-  input[type=submit] {
+input[type=submit] {
     width: auto;
     background-color: #4CAF50;
     color: white;
@@ -157,12 +190,22 @@ a:link { text-decoration: none; }
     border: none;
     border-radius: 4px;
     cursor: pointer;
-  }
+}
   
-  input[type=submit]:hover {
+input[type=submit]:hover {
     background-color: #45a049;
-  }
-  
+}
+
+.text-color {
+    color:grey;
+}
+
+.social-icons {
+    width:30px; 
+    height:30px;
+    padding-right: 10px;
+}
+
 @media (min-width: 900px) {
     .main-container{
     display: grid;
