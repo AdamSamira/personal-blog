@@ -115,7 +115,7 @@ a:link {
 }
 
 .content-head {
-    display:inline-flex; 
+    display: inline-flex; 
     font-family: Arial, Helvetica, sans-serif;
     width: 100%;
 }
@@ -125,7 +125,7 @@ a:link {
 }
 
 #picture img {
-    width:200px; 
+    width: 200px; 
     height: 200px;
 }
 
