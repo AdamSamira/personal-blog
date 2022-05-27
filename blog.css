@@ -1,9 +1,10 @@
 .main-container {
-    display:grid;
-    height:100%;
+    display:block;
+    justify-content: space-around;
+    height:auto;
     width: 100%;
     grid-template-columns:850px ;
-    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-rows: 1fr;
     grid-template-areas: 
     "hd"
     "sd"
@@ -13,9 +14,9 @@
 .header{
     grid-area: hd;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    display: inline-flex;
+    display: flex;
     justify-content: space-between;
-    background-color: white;
+    width: auto;
     color: #263E6F;
     align-items: center;
     height: 52px;
@@ -27,67 +28,70 @@
     grid-area: main;
     font-family: Arial, Helvetica, sans-serif;
     padding-left: 20px;
-    background-color: #EDEDED;
     display: flex;
-    justify-content: center
+    justify-content: center;
 }
 
 .sidebar {
     grid-area: sd;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #EDEDED;
 }
 
 .footer{
     grid-area: ft;
-    border: 1px solid red;
+    display: inline-flex;
+    border-top: 2px solid lightgray;
+    background-color: white;
+    justify-content: space-around;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .search{
   border-radius: 5px;
   height: 25px;
-  width: 70%;
-  padding: 2px 23px 2px 30px;
+  padding: 2px 50px 2px 30px;
   outline: 0;
   background-color: white;
   border: 1px solid grey;
   display: flex;
   margin-left: 10px;
-  margin-top: 30px;
+  margin-top: 20px;
   border: none;
   box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
-
 }
 
 .search-icon {
     position: absolute;
-    top: 98px;
+    top: 77px;
     left: 16px;
     width: 14px;
     
 }
 
 .blog-card{
-    margin: 30px 0 0 15px;
+    margin: 24px 0 0 15px;
     width: 90%;
     height: auto;
     background-color: #F6F6F6;
     box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     color: #263E6F;
     font-weight: bold;
+    border-radius: 5px;
+    border: 1px solid #177BF6;
     
 }
 .card{
     display: inline-flex;
-    margin: 30px 0 0 10px;
-    width: 30%;
-    height: 65%;
+    margin: 30px 10px 0 10px;
+    width: auto;
+    height: auto;
     background-color:white;
     border-radius: 2px;
     color: white;
     font-size: 15px;
+    border-radius: 5px;
     box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: 1px solid #177BF6;
 } 
 
 .card-content{
@@ -102,49 +106,6 @@
     padding-top:100px;
 }
 
-.button {
-    display:flex;
-    align-items: center;
-    background-color: #349560;
-    border: 0;
-    border-radius: 4px;
-    box-shadow: rgba(0, 0, 0, .3) 0 5px 15px;
-    box-sizing: border-box;
-    color: #fff;
-    cursor: pointer;
-    font-family: Montserrat,sans-serif;
-    font-size: .9em;
-    margin: 5px;
-    padding: 10px 15px;
-    text-align: center;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    width: 100px;
-    height: 45px;
-  }
-
-.nav-button {
-  background-color: #349560;
-  border: 0;
-  border-radius: 4px;
-  box-shadow: rgba(0, 0, 0, .3) 0 5px 15px;
-  box-sizing: border-box;
-  color: #fff;
-  cursor: pointer;
-  font-family: Montserrat,sans-serif;
-  font-size: .9em;
-  margin: 5px;
-  padding: 10px 15px;
-  text-align: center;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  width: 200px;
-}
-.nav-button:hover{
-    background-color: #296F48;
-}
 html, body {
   margin: 0;
   padding: 0;
@@ -171,19 +132,48 @@ a:link { text-decoration: none; }
     padding-top: 5px;
 }
 
-.social{
-    padding-top: 30px;
+.blog-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.form-content{
+    width: auto;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type=submit] {
+    width: auto;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
 @media (min-width: 900px) {
     .main-container{
     display: grid;
     height: auto;
     grid-template-columns: 250px 300px 300px;
-    grid-template-rows: 60px 800px 30px;
+    grid-template-rows: 50px 700px 60px;
     grid-template-areas: 
     "hd hd hd hd hd hd"
     "sd main main main main main"
     "ft ft ft ft ft ft";
+    background-color: rgba(243,243,243);
     }
 }
 

@@ -1,13 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset=="utf-8" />
+        <meta charset="utf-8" />
         <title>Personal Blog</title>
-        <meta content="width=device-width, initial-scale=1, maximum-scale=1"name="viewport"/>
-        <link href="blogpost-one.css" rel="stylesheet"/>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+        <link href="blogpost.css" rel="stylesheet"/>
     </head>
     <body>
-        <h1>Hello world!</h1>
-        <button><a href="./index.html">Back to blog main page</a></button>
+        <div class="main-container">
+            <header class="header">
+                <h2>Personal blog</h2>
+                <a href="index.html"><h4 class="header-names">Home</h4></a>
+                <h4>Write a blog</h4>
+                <h4>About us</h4>
+            </header>
+            <div class="sidebar">
+                <input class="search" type="text" placeholder="Search..">
+                <img class="search-icon" alt="search icon"src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDU2Ljk2NiA1Ni45NjYiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDU2Ljk2NiA1Ni45NjY7IiB4bWw6c3BhY2U9InByZXNlcnZlIiB3aWR0aD0iMTZweCIgaGVpZ2h0PSIxNnB4Ij4KPHBhdGggZD0iTTU1LjE0Niw1MS44ODdMNDEuNTg4LDM3Ljc4NmMzLjQ4Ni00LjE0NCw1LjM5Ni05LjM1OCw1LjM5Ni0xNC43ODZjMC0xMi42ODItMTAuMzE4LTIzLTIzLTIzcy0yMywxMC4zMTgtMjMsMjMgIHMxMC4zMTgsMjMsMjMsMjNjNC43NjEsMCw5LjI5OC0xLjQzNiwxMy4xNzctNC4xNjJsMTMuNjYxLDE0LjIwOGMwLjU3MSwwLjU5MywxLjMzOSwwLjkyLDIuMTYyLDAuOTIgIGMwLjc3OSwwLDEuNTE4LTAuMjk3LDIuMDc5LTAuODM3QzU2LjI1NSw1NC45ODIsNTYuMjkzLDUzLjA4LDU1LjE0Niw1MS44ODd6IE0yMy45ODQsNmM5LjM3NCwwLDE3LDcuNjI2LDE3LDE3cy03LjYyNiwxNy0xNywxNyAgcy0xNy03LjYyNi0xNy0xN1MxNC42MSw2LDIzLjk4NCw2eiIgZmlsbD0iIzAwMDAwMCIvPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K" />
+                <div class="blog-card">
+                    <p class="blog-text">Blog posts:</p>
+                    <ul>
+                        <a class="list-color" href="blogpost-one.html"><li>Blog post 1</li></a><br/>
+                        <a class="list-color" href="blogpost-one.html"><li>Blog post 2</li></a><br/>
+                        <a class="list-color" href="blogpost-one.html"><li>Blog post 3</li></a><br/>
+                        <a class="list-color" href="blogpost-one.html"><li>Blog post 4</li></a><br/>
+                    </ul>
+                </div>
+                <div class="blog-card">
+                    <h4 class="blog-text">Top Posts:</h4>
+                    <ol>
+                        <li class="blog-padding">Best recipe for sprinkle cake</li>
+                        <li class="blog-padding">Why your cake is sinking in the middle</li>
+                        <li class="blog-padding">Stand mixer vs. Hand mixer</li>
+                        <li class="blog-padding">Why we shouldn't be buying cake from people on IG</li>
+                    </ol>
+                </div>
+            </div>
+            <section class="content">
+                <div class="content-head">
+                    <div id="picture">
+                        <img src="Images/Food.jpg" alt="Picture of food"/>
+                    </div>
+                    <div id="caption">
+                        <h2>Stand mixer vs. Hand Mixer</h2>
+                        <em><h3>By Samira Adam - Blog Owner</h3></em>
+                        <strong><p>Deloitte - Analytics Consultant</p></strong>
+                        <p>Samira Adam is a Analytics consultant by day and Coder/Blog poster by night. She has a passion for writing
+                            and food so this happened to be the best outlet. She is also practicing her HTML/CSS skills by creating this
+                            webpage herself.
+                        </p>
+                    </div>
+                </div>
+                <div class="blog-section">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec viverra massa ex, sit amet gravida odio suscipit at. 
+                        Integer porttitor diam risus, sed imperdiet nisi semper eget. Nunc id lorem turpis. Aliquam semper nisi vitae tincidunt fringilla. 
+                        Sed non ultrices lectus, ut facilisis ipsum. Nam nec auctor est, eu eleifend leo. Mauris tempor nunc a diam tincidunt posuere. 
+                        Vestibulum non enim at purus euismod tempor. Praesent aliquet pulvinar facilisis. Etiam congue est sit amet velit sodales aliquet.
+                         Sed varius urna id dolor tincidunt, non vestibulum sapien ultrices. Proin non facilisis justo.</p>
+
+                    <p>Sed a nisi pulvinar, viverra urna sit amet, ultricies odio. Etiam in enim non turpis mollis tempor quis ac velit. Nulla facilisi.
+                         Donec eget augue enim. Fusce vitae quam nec ipsum dictum congue eu laoreet erat. Nam ullamcorper vestibulum orci, non efficitur ante ultrices at. 
+                         Vivamus quis facilisis lorem. Donec suscipit ante nisi, quis dignissim risus laoreet in. Vivamus eget arcu arcu. Proin id cursus velit. 
+                         Proin et augue congue, porttitor magna quis, pharetra mauris. Aliquam auctor eget ipsum non tempor.</p>
+                        
+                    <p>Nullam mattis, turpis id feugiat volutpat, risus ipsum aliquam lectus, vel commodo arcu felis tempus velit. 
+                        Praesent molestie, risus id pretium elementum, risus nisi semper lacus, id fermentum libero nunc non nisi. In tincidunt ultricies tortor, vitae consequat lectus dapibus id. 
+                        Vivamus vitae dolor condimentum mi venenatis sollicitudin. Pellentesque vitae diam erat. Aliquam euismod placerat nunc, in auctor nibh imperdiet sit amet. 
+                        Quisque non orci pharetra, laoreet libero a, faucibus metus. Curabitur quis tortor aliquam, fringilla augue in, varius orci. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Nam vehicula fermentum magna. Nulla in ligula eu ligula blandit sollicitudin. Fusce aliquet sem et nisi iaculis blandit. Morbi vestibulum arcu eu viverra egestas. 
+                        Suspendisse condimentum suscipit mauris, blandit vehicula est aliquam vitae.</p>
+                </div>
+            </section>
+            <footer class="footer">
+                <p id="copyright"> Copyright ©2022 Samira Inc </p>
+                <div class="form">
+                    <p>Subscribe to get notifications for new blog posts:</p>
+                    <form>
+                        <input class="form-content" type="text" placeholder="First name*"/>
+                        <input class="form-content" type="text" placeholder="Surname*"/>
+                        <input class="form-content" type="email" placeholder="Email Address*"/>
+                        <input type="submit"/>
+                    </form>
+                    </div>
+                    <div class="social">
+                        <p>Check out our social media posts:</p>
+                        <a href="https://twitter.com/i/flow/login">
+                            <img src="./Images/blacktwitter.png" alt="twitter logo"/>
+                        </a>
+                        <a href="https://en-gb.facebook.com/">
+                            <img src="./Images/blackfb.png" alt="facebook logo"/>
+                        </a>
+                        <a href="https://www.instagram.com/accounts/login/">
+                            <img src="./Images/black ig.png.crdownload" alt="instagram logo"/>
+                        </a>
+                        <a href="https://www.linkedin.com/login">
+                            <img src="./Images/black linkedin.png" alt="linkedin logo"/>
+                        </a>
+                    </div>
+                </footer>
+        </div>
     </body>
     </html>
