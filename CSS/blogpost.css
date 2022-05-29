@@ -176,6 +176,10 @@ input[type=submit]:hover {
     padding-right: 10px;
 }
 
+.quote {
+    margin-left: 0px;
+}
+
 @media (min-width: 900px) {
     .main-container{
     display: grid;
