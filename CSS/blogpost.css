@@ -1,4 +1,5 @@
-.main-container {
+@media (max-width: 900px) {
+    .main-container {
     display:block;
     justify-content: space-around;
     height:auto;
@@ -10,6 +11,8 @@
     "sd"
     "main"
     "ft";
+    background-color: rgba(243,243,243);
+    }
 }
 
 .header {
@@ -25,12 +28,21 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+@media (max-width: 900px) {
+    .header{
+        flex-direction: column;
+        height: auto;
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+}
+
 .content {
     grid-area: main;
     font-family: Arial, Helvetica, sans-serif;
     padding-top: 20px;
     margin-top: 10px;
-    margin-right: 10px;
+    margin-right: 12px;
     border-radius: 5px;
 }
 
@@ -46,6 +58,7 @@
     background-color: #fff;
     justify-content: space-around;
     font-family: Arial, Helvetica, sans-serif;
+    margin-top: 60px;
 }
 
 html, body {
@@ -90,6 +103,12 @@ html, body {
     width: 14px;
 }
 
+@media (max-width:900px) {
+    .search-icon { 
+        top: 281px;
+    }
+}
+
 .blog-text{
     padding: 10px 0px 5px 20px;
 }
@@ -120,6 +139,14 @@ a:link {
     width: 100%;
 }
 
+@media (max-width:900px) {
+    .content-head {
+        flex-direction: column;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
 #picture {
     padding: 20px 10px 20px 10px;
 }
@@ -133,8 +160,14 @@ a:link {
     color:#263E6F;
 }
 
-.form {
+.padding {
     padding-top: 5px;
+}
+
+@media (max-width:900px) {
+    .padding {
+        padding: 5px 0px 10px 10px;
+    }
 }
 
 .form-content {
@@ -168,9 +201,10 @@ input[type=submit]:hover {
 
 #copyright {
     color: gray;
+    padding-left: 5px;
 }
 
-.social img {
+.padding img {
     width: 30px;
     height: 30px; 
     padding-right: 10px;
