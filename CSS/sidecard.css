@@ -1,0 +1,11 @@
+.blog-card {
+    margin: 24px 0 0 15px;
+    width: 90%;
+    height: auto;
+    background-color: #F6F6F6;
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: #263E6F;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 1px solid #177BF6;
+}
